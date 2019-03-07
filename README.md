@@ -25,7 +25,7 @@ This is a simple .NET Windows Forms application that demonstrates the use of the
 ![][image2]
 
 3. Select one of the test reports to view. Note that the drop-down list below the test report include the result items for that selected report.
-4. Select a result item and hit the 'Draw Graph' button.
+4. Select a result item e.g. Haemoglobin (Hb), and hit the 'Draw Graph' button.
 
 ![][image3]
 
