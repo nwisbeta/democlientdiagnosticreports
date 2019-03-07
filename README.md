@@ -19,7 +19,7 @@ This is a simple .NET Windows Forms application that demonstrates the use of the
 
 ## View a test report and display a graph ##
 
-1. Hit the 'Find Patient Record' button to find the patient with NHS no: **3795624164**. The patient's details are displayed. *Note that other dummy NHS numbers are provided within the code comments.*. 
+1. Hit the 'Find Patient Record' button to find the patient with NHS no: **3795624164**. The patient's details are displayed. *Note that other dummy NHS numbers are provided within the code comments.* 
 2. To display a list of diagnostic test reports for the patient hit the 'Show Test Results' button.
 
 ![][image2]
