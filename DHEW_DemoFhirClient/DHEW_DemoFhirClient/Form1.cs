@@ -73,7 +73,6 @@ namespace DHEW_DemoFhirClient
 		private void btnShowTestResults_Click(object sender, EventArgs e)
 		{
 			// get test results for patient
-			// find a patient record based on NHS number
 			Bundle results = client.Search<DiagnosticReport>(new string[]
 			{
 				$"patient={patient.Id}"
@@ -81,7 +80,8 @@ namespace DHEW_DemoFhirClient
 
 			foreach (Bundle.EntryComponent entryComponent in results.Entry)
 			{
-				DiagnosticReport report = entryComponent.Resource as DiagnosticReport;
+                // add the DiagnosticReport to the list...
+                DiagnosticReport report = entryComponent.Resource as DiagnosticReport;
 				string testReportId = report.Id;
 				string test =
 					report.GetExtension("http://wales.nhs.uk/fhir/extensions/DiagnosticReport-WrrsReportTitle").Value.ToString();

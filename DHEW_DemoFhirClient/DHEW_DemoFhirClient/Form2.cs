@@ -32,6 +32,7 @@ namespace DHEW_DemoFhirClient
 				$"code=http://wrrs.wales.nhs.uk|{observationCode}"
 			});
 
+            // call the method to draw the graph...
 			ChartObservations(observationBundle);
 		}
 
