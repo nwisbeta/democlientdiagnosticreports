@@ -21,3 +21,26 @@ c:\users\ma000310\documents\visual studio 2015\Projects\DHEW_DemoFhirClient\DHEW
 c:\users\ma000310\documents\visual studio 2015\Projects\DHEW_DemoFhirClient\DHEW_DemoFhirClient\bin\Debug\Hl7.FhirPath.xml
 c:\users\ma000310\documents\visual studio 2015\Projects\DHEW_DemoFhirClient\DHEW_DemoFhirClient\bin\Debug\Newtonsoft.Json.xml
 C:\Users\ma000310\documents\visual studio 2015\Projects\DHEW_DemoFhirClient\DHEW_DemoFhirClient\obj\Debug\DHEW_DemoFhirClient.Form2.resources
+C:\Users\ma000310\Documents\GitHub\democlientdiagnosticreports\DHEW_DemoFhirClient\DHEW_DemoFhirClient\bin\Debug\DHEW_DemoFhirClient.exe.config
+C:\Users\ma000310\Documents\GitHub\democlientdiagnosticreports\DHEW_DemoFhirClient\DHEW_DemoFhirClient\bin\Debug\DHEW_DemoFhirClient.exe
+C:\Users\ma000310\Documents\GitHub\democlientdiagnosticreports\DHEW_DemoFhirClient\DHEW_DemoFhirClient\bin\Debug\DHEW_DemoFhirClient.pdb
+C:\Users\ma000310\Documents\GitHub\democlientdiagnosticreports\DHEW_DemoFhirClient\DHEW_DemoFhirClient\bin\Debug\Hl7.Fhir.STU3.Core.dll
+C:\Users\ma000310\Documents\GitHub\democlientdiagnosticreports\DHEW_DemoFhirClient\DHEW_DemoFhirClient\bin\Debug\Hl7.Fhir.Support.dll
+C:\Users\ma000310\Documents\GitHub\democlientdiagnosticreports\DHEW_DemoFhirClient\DHEW_DemoFhirClient\bin\Debug\Hl7.FhirPath.dll
+C:\Users\ma000310\Documents\GitHub\democlientdiagnosticreports\DHEW_DemoFhirClient\DHEW_DemoFhirClient\bin\Debug\HtmlRenderer.dll
+C:\Users\ma000310\Documents\GitHub\democlientdiagnosticreports\DHEW_DemoFhirClient\DHEW_DemoFhirClient\bin\Debug\HtmlRenderer.WinForms.dll
+C:\Users\ma000310\Documents\GitHub\democlientdiagnosticreports\DHEW_DemoFhirClient\DHEW_DemoFhirClient\bin\Debug\Newtonsoft.Json.dll
+C:\Users\ma000310\Documents\GitHub\democlientdiagnosticreports\DHEW_DemoFhirClient\DHEW_DemoFhirClient\bin\Debug\System.ValueTuple.dll
+C:\Users\ma000310\Documents\GitHub\democlientdiagnosticreports\DHEW_DemoFhirClient\DHEW_DemoFhirClient\bin\Debug\Hl7.Fhir.STU3.Core.xml
+C:\Users\ma000310\Documents\GitHub\democlientdiagnosticreports\DHEW_DemoFhirClient\DHEW_DemoFhirClient\bin\Debug\Hl7.Fhir.Support.xml
+C:\Users\ma000310\Documents\GitHub\democlientdiagnosticreports\DHEW_DemoFhirClient\DHEW_DemoFhirClient\bin\Debug\Hl7.FhirPath.xml
+C:\Users\ma000310\Documents\GitHub\democlientdiagnosticreports\DHEW_DemoFhirClient\DHEW_DemoFhirClient\bin\Debug\HtmlRenderer.pdb
+C:\Users\ma000310\Documents\GitHub\democlientdiagnosticreports\DHEW_DemoFhirClient\DHEW_DemoFhirClient\bin\Debug\HtmlRenderer.WinForms.pdb
+C:\Users\ma000310\Documents\GitHub\democlientdiagnosticreports\DHEW_DemoFhirClient\DHEW_DemoFhirClient\bin\Debug\Newtonsoft.Json.xml
+C:\Users\ma000310\Documents\GitHub\democlientdiagnosticreports\DHEW_DemoFhirClient\DHEW_DemoFhirClient\obj\Debug\DHEW_DemoFhirClient.csprojResolveAssemblyReference.cache
+C:\Users\ma000310\Documents\GitHub\democlientdiagnosticreports\DHEW_DemoFhirClient\DHEW_DemoFhirClient\obj\Debug\DHEW_DemoFhirClient.Form1.resources
+C:\Users\ma000310\Documents\GitHub\democlientdiagnosticreports\DHEW_DemoFhirClient\DHEW_DemoFhirClient\obj\Debug\DHEW_DemoFhirClient.Form2.resources
+C:\Users\ma000310\Documents\GitHub\democlientdiagnosticreports\DHEW_DemoFhirClient\DHEW_DemoFhirClient\obj\Debug\DHEW_DemoFhirClient.Properties.Resources.resources
+C:\Users\ma000310\Documents\GitHub\democlientdiagnosticreports\DHEW_DemoFhirClient\DHEW_DemoFhirClient\obj\Debug\DHEW_DemoFhirClient.csproj.GenerateResource.Cache
+C:\Users\ma000310\Documents\GitHub\democlientdiagnosticreports\DHEW_DemoFhirClient\DHEW_DemoFhirClient\obj\Debug\DHEW_DemoFhirClient.exe
+C:\Users\ma000310\Documents\GitHub\democlientdiagnosticreports\DHEW_DemoFhirClient\DHEW_DemoFhirClient\obj\Debug\DHEW_DemoFhirClient.pdb
