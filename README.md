@@ -1,5 +1,5 @@
 # DHEW Demo FHIR Client
-This is a simple .NET Windows Forms application that demonstrates the use of the DHEW FHIR API. It's intended to demonstrate how we can do the following:
+This is a simple .NET Windows Forms application to demonstrate the DHEW FHIR API. It shows how we can:
 * Retrieve a patient's record based on an NHS number
 * Display a list of diagnostic test report for the patient
 * View a test report
@@ -19,20 +19,20 @@ This is a simple .NET Windows Forms application that demonstrates the use of the
 
 ## View a test report and display a graph ##
 
-1. Hit the 'Find Patient Record' button to find the patient with NHS no: **3795624164**. The patient's details are displayed. *Note that other dummy NHS numbers are provided within the code comments.* 
-2. To display a list of diagnostic test reports for the patient hit the 'Show Test Results' button.
+1. Click 'Find Patient Record' to find the patient with NHS no: **3795624164**. The display shows the patient's details. *Note that other dummy NHS numbers are provided within the code comments.* 
+2. Click 'Show Test Results' to view a list of diagnostic test reports for the patient.
 
 ![][image2]
 
-3. Select one of the test reports to view. Note that the drop-down list below the test report include the result items for that selected report.
-4. Select a result item e.g. Haemoglobin (Hb), and hit the 'Draw Graph' button.
+3. Select one of the test reports to view. The drop-down list below the test report includes the result items for that selected report.
+4. Select a result item e.g. Haemoglobin (Hb), and click 'Draw Graph'.
 
 ![][image3]
 
 ## Understanding the solution a little deeper ##
 **NuGet packages**
 
-The following NuGet packages are used in this solution:
+This solution uses the following NuGet packages:
 
 | NuGet Package            | Description           |
 | :----------------------- |:----------------------|
@@ -49,7 +49,7 @@ The FHIR server is the DHEW server at https://dhew.wales.nhs.uk/hapi-fhir-jpaser
 
 **Patient search**
 
-The following code is used to retrieve patient records with the NHS number entered by the user in the `txtNHSno` control. There's no validation and we assume that there is only one patient record is returned
+This code retrieves patient records with the NHS number entered by the user in the `txtNHSno` control. There's no validation. We assume that the server returns only one patient record.
 
 ```
 // find a patient record based on NHS number
@@ -65,7 +65,7 @@ var patient = reresults.Entry[0].Resource as Patient;
 
 **Get diagnostic test reports for the patient**
 
-The following code is used to retrieve the test reports for the patient. We then iterate through the reports to add them to the list. 
+This code retrieves the test reports for the patient. We then iterate through the reports to add them to the list. 
 
 ```
 Bundle results = client.Search<DiagnosticReport>(new string[]
@@ -82,9 +82,9 @@ foreach (Bundle.EntryComponent entryComponent in results.Entry)
 
 **Retrieve the selected report**
 
-When the user selects a test report from the list, we retrive the report from the API using its id. The HTML panel source is set with the HTML provided in the `DiagnosticReport.Text.Div` property. Note that in real life we would probably not use this value - rather we would construct the view of the test report using the data contained within the `DiagnosticReport` resource. 
+When you select a test report from the list, you retrive the report from the API using its id. The HTML panel source is set with the HTML provided in the `DiagnosticReport.Text.Div` property. Note that in real life you would probably not use this value - rather you would construct the view of the test report using the data contained within the `DiagnosticReport` resource. 
 
-In our demo solution example  we iterate through the `Observation` resources contained within the report to display the observation codes within the drop-down list.
+Our demo solution example  iterates through the `Observation` resources contained within the report to display the observation codes within the drop-down list.
 
 ```
 DiagnosticReport diagnosticReport = client.Read<DiagnosticReport>(fhirRef);
@@ -93,7 +93,7 @@ _htmlPanel.Text = diagnosticReport.Text.Div;
 
 **Draw a graph of the selected results**
 
-Form2 within the solution is used to draw the chart, and contains a method called `ChartObservations` to take care of drawing the graph using the WinForms Chart control. To retrieve the observations containing the diagnostic results for the selected patient, and for the selected observation code the following code is used.
+Form2 within the solution draws the chart. It contains a method called `ChartObservations` to draw the graph using the WinForms Chart control. To retrieve the observations containing the diagnostic results for the selected patient, and for the selected observation code use this code.
 
 ```
 Bundle observationBundle = client.Search<Observation>(new string[]
