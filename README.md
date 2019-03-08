@@ -1,5 +1,5 @@
 # DHEW Demo FHIR Client
-This is a simple .NET Windows Forms application to demonstrate the DHEW FHIR API. It shows how we can:
+This is a simple .NET Windows Forms application to demonstrate the DHEW FHIR API. It shows how you can:
 * Retrieve a patient's record based on an NHS number
 * Display a list of diagnostic test report for the patient
 * View a test report
@@ -36,20 +36,20 @@ This solution uses the following NuGet packages:
 
 | NuGet Package            | Description           |
 | :----------------------- |:----------------------|
-| Hl7.Fhir.STU3            | This is the core support library for HL7's FHIR standard (http://hl7.org/fhir). It contains the core functionality to working with RESTful FHIR servers: POCO classes for FHIR, parsing/serialization of FHIR data and a FhirClient for easy access to FHIR servers.    |
+| Hl7.Fhir.STU3            | The core support library for HL7's FHIR standard (http://hl7.org/fhir). It contains the core functionality to working with RESTful FHIR servers: POCO classes for FHIR, parsing/serialization of FHIR data and a FhirClient for easy access to FHIR servers.    |
 | HtmlRenderer.WinForms    | HTML UI in .NET WinForms applications using controls or static rendering. This package provides a control to view HTML within a Windows Forms application    |
 
 
 **FHIR server client**
 
-The FHIR server is the DHEW server at https://dhew.wales.nhs.uk/hapi-fhir-jpaserver-example/baseDstu3. The `DhewServer` variable is set to this value, and the `client` variable is declared as follows:
+The FHIR server is the DHEW server at https://dhew.wales.nhs.uk/hapi-fhir-jpaserver-example/baseDstu3. The `DhewServer` variable is set to this value, and the `client` variable is declared as:
 
 `FhirClient client = new FhirClient(DhewServer);`
 
 
 **Patient search**
 
-This code retrieves patient records with the NHS number entered by the user in the `txtNHSno` control. There's no validation. We assume that the server returns only one patient record.
+This code retrieves patient records with the NHS number entered in the `txtNHSno` control. There's no validation. This search assumes that the server returns only one patient record.
 
 ```
 // find a patient record based on NHS number
@@ -82,9 +82,9 @@ foreach (Bundle.EntryComponent entryComponent in results.Entry)
 
 **Retrieve the selected report**
 
-When you select a test report from the list, you retrive the report from the API using its id. The HTML panel source is set with the HTML provided in the `DiagnosticReport.Text.Div` property. Note that in real life you would probably not use this value - rather you would construct the view of the test report using the data contained within the `DiagnosticReport` resource. 
+When you select a test report from the list, you retrive the report from the API using its id. The HTML panel source is set with the HTML provided in the `DiagnosticReport.Text.Div` property. Note that in real life you would probably not use this value: rather you would construct the view of the test report using the data contained within the `DiagnosticReport` resource. 
 
-Our demo solution example  iterates through the `Observation` resources contained within the report to display the observation codes within the drop-down list.
+Our demo solution example iterates through the `Observation` resources contained within the report to display the observation codes within the drop-down list.
 
 ```
 DiagnosticReport diagnosticReport = client.Read<DiagnosticReport>(fhirRef);
@@ -93,7 +93,7 @@ _htmlPanel.Text = diagnosticReport.Text.Div;
 
 **Draw a graph of the selected results**
 
-Form2 within the solution draws the chart. It contains a method called `ChartObservations` to draw the graph using the WinForms Chart control. To retrieve the observations containing the diagnostic results for the selected patient, and for the selected observation code use this code.
+Form2 within the solution draws the chart. It contains a method called `ChartObservations` to draw the graph using the WinForms Chart control. To retrieve the observations containing the diagnostic results for the selected patient, and for the selected observation code use the following code.
 
 ```
 Bundle observationBundle = client.Search<Observation>(new string[]
